@@ -41,8 +41,8 @@ baseRoute = "/api/v1.0"
 route_percip = f"{baseRoute}/precipitation"
 route_stations = f"{baseRoute}/stations"
 route_tobs = f"{baseRoute}/tobs"
-route_start = f"{baseRoute}<start>"
-route_startstop = f"{baseRoute}/<start>/<stop>"
+route_start = f"{baseRoute}/date/<start>"
+route_startstop = f"{baseRoute}/dates/<start>/<stop>"
 
 @app.route("/")
 def index():
